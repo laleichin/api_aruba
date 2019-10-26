@@ -23,7 +23,6 @@ echo $res;
 echo "<h1>JSON como objeto</h1>";
 //pinto json bonito
 echo str_replace(array("{", "}", '","'), array("{<br />&nbsp;&nbsp;&nbsp;&nbsp;", "<br />}", '",<br />&nbsp;&nbsp;&nbsp;&nbsp;"'), $res);
+//cierro conexión curl
 curl_close($ch);
-
-
 ?>
